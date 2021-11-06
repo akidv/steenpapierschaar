@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steen-Papier-Schaar</title>
+    <script src="mainSteenPapierSchaar.js"></script>
+    <link rel="stylesheet" href="styleSteenPapierSchaar.css">
+</head>
+<body>
+    <table>
+        <form>
+        <thead>
+            <tr>
+                <td><b>Speler</b></td>
+                <td><b>Computer</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="keuzeSteenPapierSchaar">Maak een keuze: </label></td>
+                <td>Maakt een keuze!</td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="keuzeSteen" name="keuzeSteenPapierSchaar" value="steen">Steen<br>
+                    <input type="radio" id="keuzePapier" name="keuzeSteenPapierSchaar" value="papier">Papier<br>
+                    <input type="radio" id="keuzeSchaar" name="keuzeSteenPapierSchaar" value="schaar">Schaar
+                </td>
+                <td>
+                    <ul>
+                        <li>Steen</li>
+                        <li>Papier</li>
+                        <li>Schaar</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Spelers keuze: <b id="keuzeSpeler"></b><br>
+                    <img id="winnaarKroonSpeler" src="Images/KroonWinnaar1Leeg.png">
+                    <img id="afbeeldingKeuzeSpeler" src="Images/SteenPapierSchaarLeeg.png">
+                </td>
+                <td>Computers keuze: <b id="keuzeComputer"></b><br>
+                    <img id="winnaarKroonComputer" src="Images/KroonWinnaar1Leeg.png">
+                    <img id="afbeeldingKeuzeComputer" src="Images/SteenPapierSchaarLeeg.png">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    Winnaar Beste uit Drie:<br>
+                    <b id="winnaarBesteUit" style="font-size: 2em;"></b><br>
+                    Score (speler : computer):<br>
+                    <b id="uitslagScoreSpeler" style="font-size: 2em;">0</b> <b style="font-size: 2em;">:</b> <b id="uitslagScoreComputer" style="font-size: 2em;">0</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="speelButtonCell">
+                    <input type="button" value="Speel!" onclick="speelSteenPapierSchaar()" id="speelButton" style="background-color: green;"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Aantal beurten: <b id="beurtenTeller">0</b></td>
+            </tr>
+        </tfoot>
+    </form>
+    </table>
+</body>
+</html>

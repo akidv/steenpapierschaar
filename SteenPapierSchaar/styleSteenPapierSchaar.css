@@ -1,0 +1,80 @@
+body {
+    margin: 0 auto;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
+thead {
+    text-align: center;
+}
+.blauweBox {
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    padding: 10px
+}
+#speelButton {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    min-width: 120px;
+}
+#winnaarKeuze {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+#winnaarKroon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+}
+#winnaarRonde {
+    text-align: center;
+}
+#afbeeldingKeuzeSpeler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+#afbeeldingKeuzeComputer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+#winnaarKroonSpeler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+}
+#winnaarKroonComputer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+}
